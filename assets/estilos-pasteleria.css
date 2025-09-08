@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {box-sizing: border-box;}
+
+body{
+    margin: 0;
+    background-color: #FFF5E1;
+    font-family: Lato;
+}
+
+body h1{
+    font-family: Lato;
+    font-size: 22px;
+    text-align: center;
+    margin: 15px;
+}
+
+body #link{
+    color: #5D4037;
+    font-size: 20px;
+}
+
+div.header {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-family: Pacifico;
+    font-size: 60px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    right: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+body footer{
+    font-family: Lato;
+    color: #B0BEC5;
+    font-size: 16px;  
+    background-color: #8B4513;
+}
