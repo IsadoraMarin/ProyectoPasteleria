@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --color1: #FFF5E1;
+    --color2: #FFC0CB;
+    --color3: #8B4513;
+    --color4: #5D4037;
+    --color5: #B0BEC5;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+    background-image: url(img/florencia-rosenfeld-1Gv_4RcljOE-unsplash.jpg);
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: Pacifico;
+    color: var(--color4);
+    margin-top: 15px;
+}
+
+div h4{
+    font-family: Pacifico;
+    color: var(--color4);
+    font-size: 24px;
+    text-align: center;
+}
+
+div p{
+    font-family: Lato;
+    color: var(--color5);
+    text-align: center;
+    font-size: 16px;
+}
