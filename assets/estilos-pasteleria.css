@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+:root{
+    --colorfondo: #fff5e1;
+    --colorsecundario: #FFC0CB;
+    --color3: #5D4037;
+    --font-body: "Lato";
+    --colorfuente: #B0BEC5;
+}
+
 * {box-sizing: border-box;}
 
 body{
     margin: 0;
-    background-color: #FFF5E1;
+    background-color: var(--colorfondo);
     font-family: Lato;
+    color: var(--colorfuente);
 }
 
 body h1{
-    font-family: Lato;
+    font-family: var(--font-body);
     font-size: 22px;
     text-align: center;
     margin: 15px;
@@ -22,11 +31,15 @@ body #link{
 }
 
 div.header {
-    background-color: #f1f1f1;
+    
     text-align: center;
     padding: 10px;
-    font-family: Pacifico;
+    font-family: var();
     font-size: 60px;
+}
+
+div .top-bar{
+    background-color: var(--color3);
 }
 
 .dropdown {
