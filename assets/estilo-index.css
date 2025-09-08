@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+:root{
+    --color1: #FFF5E1;
+    --color2: #FFC0CB;
+    --color3: #8B4513;
+    --color4: #5D4037;
+    --color5: #B0BEC5;
+}
+
+body{
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+body h1{
+    color: var(--color4);
+    font-family: Pacifico;
+    size: 32px;
+    text-align: center;
+}
+
+body div{
+    background-color: #FFF5E1;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+    color: white;
+    background-color: #8B4513;
+    height: 100%; 
+    background-position: bottom;
+    background-size: auto;
+}
