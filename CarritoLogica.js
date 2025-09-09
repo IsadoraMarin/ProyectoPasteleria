@@ -1,22 +1,27 @@
-var totalCarrito = 0; 
-var resultadoElemento = document.getElementById("total-carrito");
+
+let totalCarrito = 0; 
 
 
-var botones = document.querySelectorAll('.producto button');
-for (var i = 0; i < botones.length; i++) {
-    botones[i].onclick = function() {
+const resultadoElemento = document.getElementById("total-carrito");
+const botones = document.querySelectorAll('.producto button');
 
-        var precioTexto = this.parentNode.querySelector('.precio').innerText;
-
-        var precio = parseFloat(precioTexto.replace('$', '').replace(/\./g, ''));
-        
-
-        agregarAlCarrito(precio);
-    };
+function agregarAlCarrito(precioProducto) {
+   
+    totalCarrito = totalCarrito + precioProducto;
+    
+   
+    resultadoElemento.innerText = "Total: $" + totalCarrito.toLocaleString('es-CL');
 }
 
 
-function agregarAlCarrito(precioProducto) {
-    totalCarrito += precioProducto;
-    resultadoElemento.innerText = "Total: $" + totalCarrito.toLocaleString('es-CL');
+for (let i = 0; i < botones.length; i++) {
+    botones[i].onclick = function() {
+        
+        const precioTexto = this.parentNode.querySelector('.precio').innerText;
+       
+        const precio = parseFloat(precioTexto.replace('$', '').replace(/\./g, ''));
+        
+       
+        agregarAlCarrito(precio);
+    };
 }
