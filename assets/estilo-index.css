@@ -11,28 +11,58 @@
 }
 
 body{
-    background-color: var(--color1);
+    background-color: var(--color3);
     color: var(--color5);
 }
 
-body h1{
+.titulo{
     color: var(--color4);
     font-family: Pacifico;
-    size: 32px;
+    font-size: 78px;
     text-align: center;
+    margin: 80px;
 }
 
-body div{
-    background-color: #FFF5E1;
-}
-
-footer{
+.about{
     margin: 0;
     padding: 0;
     font-family: Lato;
+    background-image: url(img/yosep-sugiarto-tbwzPufT_yo-unsplash.jpg);
+    opacity: 50%;
+    height: 100%; 
+}
+
+.about h4{
+    margin: 15px;
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 30px;
+    padding: 0 0 30px 0;
+    color: white;
+}
+
+.about p{
+    font-size: 16px;
+    color: white;
+    font-family: Lato;
+    text-align: center;
+}
+
+.about a{
+    color: #B0BEC5;
+    text-align: center;
+    text-decoration: wavy;
+}
+
+footer{
+    font-family: Lato;
     color: white;
     background-color: #8B4513;
-    height: 100%; 
-    background-position: bottom;
+    background-position: inherit;
     background-size: auto;
+}
+
+footer h4{
+    font-family: Pacifico;
+    font-size: 30px;
 }
