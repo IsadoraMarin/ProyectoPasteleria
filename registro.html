@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="assets/estilo-register.css">
 </head>
 <body>
+    <div class="form-sheet">
     <form action="" method="post" id="form">
-        <div class="form">
             <h1>Registrarse</h1>
             <div class="group">
-                <input type="text" name="" id="name" required><span class="barra"></span>
+                <input type="text" name="" id="name" required><span class="user-name"></span>
                 <label for="">Nombre de usuario</label>
             </div>
             <div class="group">
@@ -23,10 +23,14 @@
                 <input type="password" name="" id="password" required><span class="barra"></span>
                 <label for="">Contraseña</label>
             </div>
-            <button type="submit">Registrarse</button>
-            <p class="warnings" id="warnings"></p>
-        </div>
+            <input type="submit" value="Registrarse"></input>
+            <div class="links">
+                <a href="index2.html">Volver al inicio | </a>
+                <a href="sesion.html">Iniciar sesion</a>
+                <p class="warnings" id="warnings"></p>
+            </div>
     </form>
+    </div>
     <script src="registro.js"></script>
 </body>
 </html>

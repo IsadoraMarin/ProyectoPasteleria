@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --color1: #FFF5E1;
+    --color2: #FFC0CB;
+    --color3: #8B4513;
+    --color4: #5D4037;
+    --color5: #B0BEC5;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+    background-image: url(img/christiann-koepke-AigxB1zfRVo-unsplash.jpg);
+    height: 100%; 
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.form-sheet{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form-sheet h1{
+    font-family: Pacifico;
+    text-align: center;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid silver;
+}
+
+.form-sheet form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+div .group{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.group input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.group label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+form .password{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.password input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.password label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.group span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #FFC0CB;
+    transition: .5s;
+}
+
+.group input:focus ~ label,
+.group input:focus ~ label{
+    top: -5px;
+    color: #FFC0CB;
+}
+
+.group input:focus ~ span::before,
+.group input:focus ~ span::before{
+    width: 100%;
+}
+
+div input[type="submit"]{
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    background: #FFC0CB;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border-color: #FFC0CB;
+    transition: .5s;
+}
+
+div .links{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.links a{
+    color:#8B4513;
+    text-decoration: none;
+}
+.links a:hover{
+    color:#8B4513;
+    text-decoration: underline;
+}
