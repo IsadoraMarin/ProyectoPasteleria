@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Seguimiento de tu Pedido</title>
+    <link rel="stylesheet">
+    <style>
+        .contenedor-seguimiento {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        .contenedor-seguimiento h2 {
+            color: #FFC0CB;
+            border-bottom: 2px solid #FFC0CB;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contenedor-seguimiento p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .estado {
+            display: inline-block;
+            background-color: #8B4513;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pastelería Mil Sabores</h1>
+    </header>
+
+    <main>
+        <div class="contenedor-seguimiento">
+            <h2>¡Tu Pedido Ha Sido Recibido!</h2>
+            <p><strong>Número de Pedido:</strong> <span id="numero-pedido">#12345</span></p>
+            <p>El estado actual de tu pedido es:</p>
+            <div class="estado">Preparación en Curso</div>
+        </div>
+    </main>
+
+    <script>
+        const numeroPedido = Math.floor(Math.random() * 10000) + 10000;
+        document.getElementById('numero-pedido').textContent = `#${numeroPedido}`;
+    </script>
+</body>
+
+</html>

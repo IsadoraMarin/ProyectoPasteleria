@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogo de Pasteles</title>
+    <link rel="stylesheet" href="estiloCarrito.css">
+</head>
+
+<body>
+    <header>
+        <h1>Catalogo de Pasteles</h1>
+        <button id="abrir-carrito"> Abrir Carrito (<span id="Contador-Carrito">0</span>)</button>
+    </header>
+
+    <main>
+        <section class="seleccion-producto">
+            <h2>Selecciona tu Pastel:</h2>
+            <div class="opciones">
+                <select id="selector-pasteles">
+                    <option value="Torta Cuadrada de Chocolate" data-precio="45000">Torta Cuadrada de Chocolate
+                        ($45.000)</option>
+                    <option value="Torta Cuadrada de Frutas" data-precio="50000">Torta Cuadrada de Frutas ($50.000)
+                    </option>
+                    <option value="Torta Circular de Vainilla" data-precio="40000">Torta Circular de Vainilla ($40.000)
+                    </option>
+                    <option value="Torta Circular de Manjar" data-precio="42000">Torta Circular de Manjar ($42.000)
+                    </option>
+                </select>
+                <button id="boton-agregar">Añadir al Carrito</button>
+            </div>
+        </section>
+
+        <div id="modal-carrito" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal">&times;</span>
+                <h2>Resumen de tu Carrito</h2>
+                <table id="tabla-carrito">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Total</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="resumen-total">
+                    <p>Total a pagar: <span id="Total-carrito">$0</span></p>
+                </div>
+
+                <div class="formulario-cliente">
+                    <h3>Datos de contacto</h3>
+                    <input type="text" id="nombre-cliente" placeholder="Nombre completo">
+                    <input type="email" id="email-cliente" placeholder="Correo electrónico">
+                    <input type="tel" id="telefono-cliente" placeholder="Teléfono">
+                </div>
+
+                <button class="boton-comprar">Comprar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="CarritoLogica.js"></script>
+</body>
+
+</html>
+
