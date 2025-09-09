@@ -23,7 +23,45 @@ body{
     margin: 80px;
 }
 
+.catalog{
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+    background: none;
+    opacity: 50%;
+    height: 100%; 
+}
+
+.catalog h4{
+    margin: 15px;
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 40px;
+    padding: 0 30px;
+    color: var(--color3);
+}
+
+.catalog iframe{
+    padding: 60px 10px 30px;
+    width: 1240px;
+    height: 400px;
+}
+
+.catalog a{
+    color: var(--color3);
+    text-align: center;
+    text-decoration: none;
+}
+
+.catalog a:hover{
+    color: var(--color3);
+    text-align: center;
+    text-decoration: underline;
+}
+
 .about{
+    width: 1300;
+    height: auto;
     margin: 0;
     padding: 0;
     font-family: Lato;
